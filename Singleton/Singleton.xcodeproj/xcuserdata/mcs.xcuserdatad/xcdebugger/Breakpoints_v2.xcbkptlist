@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/ViewController.swift"
+            timestampString = "587612584.88854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/NextViewController.swift"
+            timestampString = "587612584.891572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "NextViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.(triviaObject in _D00903A4213955DD58399D34F09AAA47).getter : Swift.Optional&lt;Singleton.TriviaObject&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.867319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "303">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.(triviaObject in _D00903A4213955DD58399D34F09AAA47).setter : Swift.Optional&lt;Singleton.TriviaObject&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.870688"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "413">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.(triviaObject in _D00903A4213955DD58399D34F09AAA47).modify : Swift.Optional&lt;Singleton.TriviaObject&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.874403"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.(triviaObject in _D00903A4213955DD58399D34F09AAA47).modify : Swift.Optional&lt;Singleton.TriviaObject&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.877755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Singleton.NextViewController"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.880812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Singleton.NextViewController&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599831.883888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/ViewController.swift"
+            timestampString = "587612584.895662"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/NextViewController.swift"
+            timestampString = "587612584.896823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/ViewController.swift"
+            timestampString = "587612584.898994"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/NextViewController.swift"
+            timestampString = "587612584.900189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "NextViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.newLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.508559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.newLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.513245"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.newLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.516647"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.newLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.520646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Singleton.NextViewController"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.5236011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "401">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Singleton.NextViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Singleton.NextViewController&gt;"
+                  moduleName = "Singleton"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mcs/Desktop/IOS%20training/Singleton/Singleton/NextViewController.swift"
+                  timestampString = "587599837.527655"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "321">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/ViewController.swift"
+            timestampString = "587612584.902162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Singleton/ViewController.swift"
+            timestampString = "587612584.903078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "Jeopardy(withCategory:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

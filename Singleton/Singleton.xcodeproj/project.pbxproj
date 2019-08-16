@@ -14,6 +14,9 @@
 		04A76133230446CE001143CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A76131230446CE001143CF /* LaunchScreen.storyboard */; };
 		04A7613E230446CE001143CF /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7613D230446CE001143CF /* SingletonTests.swift */; };
 		04A76149230446CE001143CF /* SingletonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A76148230446CE001143CF /* SingletonUITests.swift */; };
+		04A761572304D723001143CF /* SingletonNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A761562304D723001143CF /* SingletonNotes.swift */; };
+		04A7615923058635001143CF /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7615823058635001143CF /* NextViewController.swift */; };
+		04A7615B2305BA3C001143CF /* TriviaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7615A2305BA3C001143CF /* TriviaObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		04A76144230446CE001143CF /* SingletonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A76148230446CE001143CF /* SingletonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonUITests.swift; sourceTree = "<group>"; };
 		04A7614A230446CE001143CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A761562304D723001143CF /* SingletonNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonNotes.swift; sourceTree = "<group>"; };
+		04A7615823058635001143CF /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		04A7615A2305BA3C001143CF /* TriviaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 				04A7612F230446CE001143CF /* Assets.xcassets */,
 				04A76131230446CE001143CF /* LaunchScreen.storyboard */,
 				04A76134230446CE001143CF /* Info.plist */,
+				04A7615823058635001143CF /* NextViewController.swift */,
+				04A7615A2305BA3C001143CF /* TriviaObject.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 			children = (
 				04A7613D230446CE001143CF /* SingletonTests.swift */,
 				04A7613F230446CE001143CF /* Info.plist */,
+				04A761562304D723001143CF /* SingletonNotes.swift */,
 			);
 			path = SingletonTests;
 			sourceTree = "<group>";
@@ -257,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A7612B230446CB001143CF /* ViewController.swift in Sources */,
+				04A7615923058635001143CF /* NextViewController.swift in Sources */,
 				04A76129230446CB001143CF /* AppDelegate.swift in Sources */,
+				04A7615B2305BA3C001143CF /* TriviaObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A7613E230446CE001143CF /* SingletonTests.swift in Sources */,
+				04A761572304D723001143CF /* SingletonNotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
