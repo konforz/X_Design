@@ -25,7 +25,7 @@ class NextViewController: UIViewController {
     var nameUpdate: String?
     var numberUpdate: Int?
     var timeUpdate: Int?
-    var premierUpdate: Int?
+    var premierUpdate: String?
     var summaryUpdate: String?
     
     override func viewDidLoad() {
@@ -34,22 +34,23 @@ class NextViewController: UIViewController {
         
         
         season.text = "season: \(seasonUpdate ?? 0 )"
-        name.text = "name: \(nameUpdate ?? "")"
-        premier.text = "airdate: \(premierUpdate ?? 0 )"
+        name.text = "name: \(nameUpdate ?? "No Value")"
+        premier.text = "premier: \(premierUpdate ?? "") "
         runtime.text = "runtime: \(timeUpdate ?? 0 )"
-        number.text = "number: \(numberUpdate ?? 0)"
-        summary.text = "summary: \(summaryUpdate ?? "")"
+        number.text = "episode: \(numberUpdate ?? 0)"
+        summary.text = "summary: \(summaryUpdate ?? "No Value")"
     
     }
 
 private func setUpViewController(with got: Episodes) {
     // set all the outlets
-    Int(season.text ?? nil) = got.season as!
-    name.text = got.name
-    Int(premier.text ?? nil)  = got.premier as!
-    Int(runtime.text ?? nil) = got.runtime as!
-    number.text = got.number
-    summary.text = got.summary
+//    season.text ?? nil = got.season as!
+//    name.text ?? nil = got.name as!
+//    premier.text ?? nil  = got.premier as!
+//    runtime.text ?? nil = got.runtime as!
+//    number.text ?? nil = got.number
+//    summary.text = got.summary
 
+}
 }
 

@@ -9,17 +9,20 @@
 import Foundation
 
 struct GameOfThrones: Codable {
-    let embedded: String?
+    let embedded: Embedded
     
+    enum CodingKeys: String, CodingKey {
+        case embedded = "_embedded"
+    }
 }
 
-struct embedded: Codable {
+struct Embedded: Codable {
     let episodes: [Episodes]
 }
 
 struct Episodes: Codable {
     let name: String?
-    let premier: Int?
+    let airdate: String?
     let runtime: Int?
     let season: Int?
     let number: Int?

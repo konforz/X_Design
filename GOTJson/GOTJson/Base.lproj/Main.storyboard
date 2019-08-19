@@ -60,7 +60,7 @@
         <!--NextViewController-->
         <scene sceneID="XXi-S5-KO5">
             <objects>
-                <viewController storyboardIdentifier="NextViewController" title="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zti-gK-kKw" customClass="NextViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" title="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zti-gK-kKw" customClass="NextViewController" customModule="GOTJson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FDU-Qc-skZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
                                 <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number-&gt;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGc-7n-rVI">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode-&gt;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGc-7n-rVI">
                                 <rect key="frame" x="4" y="220" width="178" height="19"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="tintColor" red="0.8973445595854922" green="0.12809627086388109" blue="0.19041426342724807" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
