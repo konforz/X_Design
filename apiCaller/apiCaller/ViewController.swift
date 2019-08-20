@@ -111,7 +111,7 @@ extension ViewController : UITableViewDelegate {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let nextViewController = storyboard.instantiateViewController(withIdentifier:
         "ViewController") as! ViewController
-    //Go on to the next sreen after user selects cell ^
+    //Go on to the next sreen after user selects cell 
     nextViewController.array = tappedArray
         nextViewController.url = nil
     navigationController?.pushViewController(nextViewController, animated: true)
