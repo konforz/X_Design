@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  Extermination
+//  PokemonCoredata
 //
-//  Created by MCS on 8/20/19.
+//  Created by MCS on 8/21/19.
 //  Copyright © 2019 MCS. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

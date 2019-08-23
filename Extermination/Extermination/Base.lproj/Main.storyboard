@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-ap-QPV">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -32,6 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="XaM-PS-rtG">
                         <barButtonItem key="rightBarButtonItem" title="+Add Kill" id="Nhb-wj-jCn">
                             <color key="tintColor" red="0.99954921007156372" green="0.0036220015026628971" blue="0.061493657529354095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,6 +41,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableview" destination="KKa-ap-QPV" id="5hy-a7-Qap"/>
                     </connections>
@@ -56,9 +58,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="textfield" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3Z-2Z-v9i">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="textfield" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3Z-2Z-v9i">
                                 <rect key="frame" x="159" y="433" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99557048082351685" green="0.0016161196399480104" blue="0.13245335221290588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
@@ -68,7 +69,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-0S-zfk">
                                 <rect key="frame" x="177" y="579" width="70" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.31759598119999999" green="0.39965187819999998" blue="0.1066942291" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,15 +79,44 @@
                                     <action selector="Submit:" destination="Dgg-eO-KRB" eventType="touchUpInside" id="teo-no-ISD"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kpd-dT-Bg0">
+                                <rect key="frame" x="147" y="500" width="121" height="28"/>
+                                <segments>
+                                    <segment title="Alive"/>
+                                    <segment title="Dead"/>
+                                </segments>
+                                <connections>
+                                    <action selector="aliveOrDeadControl:" destination="Dgg-eO-KRB" eventType="valueChanged" id="xHf-g6-mnO"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3H5-Gm-OW2">
+                                <rect key="frame" x="345" y="44" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="darkModeSwitch:" destination="yaF-iU-bEf" eventType="valueChanged" id="yWj-tG-2a0"/>
+                                    <action selector="didTapDarkMode:" destination="yaF-iU-bEf" eventType="valueChanged" id="KeS-Me-IUa"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f3Z-2Z-v9i" firstAttribute="leading" secondItem="d9T-gx-0mp" secondAttribute="leading" constant="159" id="7lD-ks-q3L"/>
+                            <constraint firstItem="kpd-dT-Bg0" firstAttribute="top" secondItem="f3Z-2Z-v9i" secondAttribute="bottom" constant="37" id="KaI-co-KJE"/>
+                            <constraint firstItem="f3Z-2Z-v9i" firstAttribute="centerY" secondItem="aAA-ym-PhT" secondAttribute="centerY" id="Suh-s2-IrX"/>
+                            <constraint firstItem="f3Z-2Z-v9i" firstAttribute="centerX" secondItem="aAA-ym-PhT" secondAttribute="centerX" id="ghK-K7-kh9"/>
+                            <constraint firstItem="f3Z-2Z-v9i" firstAttribute="centerX" secondItem="kpd-dT-Bg0" secondAttribute="centerX" id="xa8-Ar-TL0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d9T-gx-0mp"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TextField" destination="f3Z-2Z-v9i" id="YNi-0U-3Nc"/>
+                        <outlet property="aliveOrDead" destination="kpd-dT-Bg0" id="SXZ-17-lA6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk0-Ud-ehd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yaF-iU-bEf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1755" y="100"/>
         </scene>
