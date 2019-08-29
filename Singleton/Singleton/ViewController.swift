@@ -69,9 +69,7 @@ extension ViewController: UITableViewDelegate {
        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         // instantiate your viewcontroller using the storyboard reference
         let NextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController
-        // i'd have a property on that VC that stores a Hint object
-        //let triviaObjectProperty: TriviaObject
-        // set the hint property, then when that VC's view did load gets called, the hint will already be there and vdl can call a setup func with it
+    
         
         NextViewController.updateQuestion = triviaObjectArray[indexPath.row].question
         NextViewController.updateAnswer = triviaObjectArray[indexPath.row].answer

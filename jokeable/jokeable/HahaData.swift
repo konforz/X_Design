@@ -44,6 +44,7 @@ class CoreDataManager {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
                  print("system crash code:", error)
+                
             }
         }
     }

@@ -9,24 +9,27 @@
 import Foundation
 
 struct HaHa: Codable {
-    let categories: Categories
+    let categories: [Categories]
     
 }
 struct Categories: Codable {
-    let programming: String?
-    let dark: String?
-    let anyJoke: String?
-    let miscellaneous: String?
-    let setup: String?
-    let delivery: String?
-    let category: String?
+    let programming: String
+    let dark: String
+    let anyJoke: String
+    let miscellaneous: String
+    let setup: String
+    let delivery: String
+    let category: String
     
-    enum Clown: String {
+    enum CodingKeys: String, CodingKey {
         case programming = "Programming"
         case dark = "Dark"
         case anyJoke = "Any"
         case miscellaneous = "Miscellaneous"
-        case categories
+        case setup
+        case delivery
+        case category
        
     }
 }
+

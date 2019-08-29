@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController{
 
     var blacklistFlags: String?
-    var haHaArray: [HaHa] = []
+    var haHaArray: [Categories] = []
     
     @objc func indexChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
@@ -31,6 +31,8 @@ class ViewController: UIViewController{
     }
     
     @IBAction func addJoke(_ sender: UIBarButtonItem) {
+        
+        
     }
     
     
@@ -53,7 +55,7 @@ class ViewController: UIViewController{
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "defaultCell")
-        Jokes(withCategories: "categories") { (haArray) in
+        self.Jokes(withCategories: "categories") { (haArray) in
             print(haArray)
         }
     }
@@ -70,13 +72,13 @@ class ViewController: UIViewController{
         
         URLSession.shared.dataTask(with: Ask) {(data, response,_ ) in
             guard let data = data else {return}
-            let ha = try? JSONDecoder().decode([HaHa].self, from: data)
-            guard let allHas = ha else {
-                print("something went wring")
+           guard let ha = try? JSONDecoder().decode(HaHa.self, from: data)
+             else {
+                print("something went wrong")
                 return
 }
-            self.haHaArray = allHas
             DispatchQueue.main.async {
+                 self.haHaArray = ha.categories
                 self.tableView.reloadData()
             }
             }.resume()
@@ -92,7 +94,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "defaultCell", for: indexPath)
         let haHa = haHaArray[indexPath.row]
-//        cell.textLabel?.text = haHa.setup + "/" + haHa.delivery
+        cell.textLabel?.text = haHa.anyJoke
         cell.textLabel?.numberOfLines = 0
         return cell
     }

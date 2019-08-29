@@ -63,15 +63,15 @@ class NextViewController: UIViewController {
 //        }
     }
     
-    private func setUpViewController(with triviaObject: TriviaObject) {
-        // set all the outlets
-        clue.text = triviaObject.question
-        answer.text = triviaObject.answer
-        value.text = triviaObject.question
-        category.text = triviaObject.question
-        airDate.text = triviaObject.question
-        creationDate.text = triviaObject.question
-
-    }
+//    private func setUpViewController(with triviaObject: TriviaObject) {
+//        // set all the outlets
+//        clue.text = triviaObject.question
+//        answer.text = triviaObject.answer
+//        value.text = triviaObject.question
+//        category.text = triviaObject.question
+//        airDate.text = triviaObject.question
+//        creationDate.text = triviaObject.question
+//
+//    }
 }
 
