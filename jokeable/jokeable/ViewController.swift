@@ -49,6 +49,7 @@ class ViewController: UIViewController{
         segmentedControl.layer.cornerRadius = 5.0
         segmentedControl.backgroundColor = .red
         segmentedControl.tintColor = .yellow
+        segmentedControl.bottomAnchor 
         
         self.view.addSubview(segmentedControl)
     

@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+//final class Transitions: NSObject, UIViewControllerAnimatedTransitioning {
+//    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+//        <#code#>
+//    }
+//    
+//    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+//        <#code#>
+//    }
+//    
+//}

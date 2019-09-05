@@ -12,11 +12,17 @@ final class FriendsViewModel {
   private let friendsURL = "https://api.tvmaze.com/shows/431?embed=episodes"
   private var episodes = [Episode]()
   
-  func getData(_ completion: (() -> Void)?) {
+    func getData(session: Session = URLSession.shared, completion: (() -> Void)?) {
     guard let friendsUrl = URL(string: self.friendsURL) else {
       completion?()
       return
     }
+        session.getData(from: friendsUrl) {[weak self] (data, _) in
+            defer { completion?() }
+            guard let data = data,
+                let episodeContainer = try? JSONDecoder().decode(EpisodeContainer.self, from: data) else { return}
+            self?.episodes = episodeContainer.episodes
+            }
     URLSession.shared.dataTask(with: friendsUrl) { data, _, error in
       defer { completion?() }
       guard let data = data,

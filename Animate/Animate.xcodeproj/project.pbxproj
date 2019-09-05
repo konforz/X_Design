@@ -14,6 +14,8 @@
 		04B355752316FC9100653B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B355742316FC9100653B03 /* Assets.xcassets */; };
 		04B355782316FC9100653B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B355762316FC9100653B03 /* LaunchScreen.storyboard */; };
 		04B355832316FC9100653B03 /* AnimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B355822316FC9100653B03 /* AnimateTests.swift */; };
+		04B3558E231700D300653B03 /* AnimateTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3558D231700D300653B03 /* AnimateTransitionController.swift */; };
+		04B35590231700F200653B03 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3558F231700F200653B03 /* AnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		04B3557E2316FC9100653B03 /* AnimateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B355822316FC9100653B03 /* AnimateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateTests.swift; sourceTree = "<group>"; };
 		04B355842316FC9100653B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B3558D231700D300653B03 /* AnimateTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateTransitionController.swift; sourceTree = "<group>"; };
+		04B3558F231700F200653B03 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				04B355762316FC9100653B03 /* LaunchScreen.storyboard */,
 				04B355792316FC9100653B03 /* Info.plist */,
 				04B355712316FC8F00653B03 /* Animate.xcdatamodeld */,
+				04B3558D231700D300653B03 /* AnimateTransitionController.swift */,
+				04B3558F231700F200653B03 /* AnimationController.swift */,
 			);
 			path = Animate;
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 			files = (
 				04B355732316FC8F00653B03 /* Animate.xcdatamodeld in Sources */,
 				04B3556D2316FC8F00653B03 /* ViewController.swift in Sources */,
+				04B3558E231700D300653B03 /* AnimateTransitionController.swift in Sources */,
 				04B3556B2316FC8F00653B03 /* AppDelegate.swift in Sources */,
+				04B35590231700F200653B03 /* AnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

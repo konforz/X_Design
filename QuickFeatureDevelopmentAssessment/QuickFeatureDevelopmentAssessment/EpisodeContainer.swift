@@ -8,6 +8,17 @@
 
 import Foundation
 
+protocol  Session {
+    func getData(from url: URL, completion: ((Data?, Error?)-> Void)?)
+}
+
+extension URLSession: Session {
+    func getData(from url: URL, completion: ((Data?, Error?)-> Void)?) {
+        dataTask(with: url) { (data, _, error) in completion?(data, error)
+    }.resume()
+    }
+    }
+
 struct EpisodeContainer: Codable {
   let episodes: [Episode]
   
@@ -24,6 +35,14 @@ struct EpisodeContainer: Codable {
     let subContainer = try topContainer.nestedContainer(keyedBy: EpisodeCodingKeys.self, forKey: .topLevel)
     self.episodes = try subContainer.decode([Episode].self, forKey: .episodes)
   }
+    init (episode: [Episode]) {
+         episode.self
+    }
+    func encode(to encoder: Encoder) throws {
+        var topContainer = try encoder.container(keyedBy: TopLevelCodingKeys.self)
+        var subContainer = try topContainer.nestedContainer(keyedBy:
+            EpisodeCodingKeys.self, forKey: Episode)
+    }
 }
 
 
@@ -50,6 +69,8 @@ struct Episode: Codable {
         case original
         case medium
     }
+    
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let imageContainer = try container.nestedContainer(keyedBy: imageCodingKeys.self, forKey: .image)
@@ -59,5 +80,17 @@ struct Episode: Codable {
         self.runtime = try container.decode(Int.self, forKey: .runtime)
         self.summary = try container.decode(String.self, forKey: .summary)
         self.image = try imageContainer.decode(String.self, forKey: .original)
+        
 }
+    
+    init() {
+        airDate = ""
+        airStamp = ""
+        name = ""
+        runtime = 1
+        summary = ""
+        image = ""
+        
+    }
+
 }

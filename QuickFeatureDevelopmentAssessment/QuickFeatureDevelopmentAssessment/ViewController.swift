@@ -17,10 +17,7 @@ final class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.episodeTableView.dataSource = self
-    self.episodeTableView.delegate = self
-//    self.episodeTableView.register(UITableViewCell.self,
-//                                   forCellReuseIdentifier: "cell")
-//    
+    self.episodeTableView.delegate = self 
     self.episodeTableView.register(UINib(nibName: "myTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     //self.episodeTableView.register(myTableViewCell.self, forCellReuseIdentifier: "Cell")
     self.viewModel.getData {
@@ -38,7 +35,7 @@ extension ViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//  let mycell = myTableViewCell(style: .subtitle, reuseIdentifier: "cell")
+
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! myTableViewCell
     let episode = self.viewModel.episode(for: indexPath.row)
     cell.titleLabel?.text = episode.name
