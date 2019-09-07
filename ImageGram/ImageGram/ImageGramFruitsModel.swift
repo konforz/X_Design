@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
+
 final class FruitsModel {
     private let fruitsURL = "https://pixabay.com/api/?key=13466060-69767d8687e81218abbf53a42&q=fruits&image_type=photo&pretty=true"
      var hits = [Hits]()
     
-    func getData(_ completion: (() -> Void)?) {
+  public  func getData(_ completion: (() -> Void)?) {
         guard let fruitsUrl = URL(string: self.fruitsURL) else {
             completion?()
             return
@@ -30,7 +31,7 @@ final class FruitsModel {
 struct FruitsContainer: Codable {
     let hits = [Hits]()
     
-    enum FruitsCodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case hits
     }
     
@@ -45,7 +46,7 @@ struct Hits: Codable {
     let userImage: String
     let largeImage: String
     
-    enum fruitsCodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case views
         case likes
         case comments
@@ -54,7 +55,7 @@ struct Hits: Codable {
         case largeImage = "largeImageURL"
     }
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: fruitsCodingKeys.self)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         self.views = try container.decode(Int.self, forKey: .views)
         self.likes = try container.decode(Int.self, forKey: .likes)
         self.comments = try container.decode(Int.self, forKey: .comments)

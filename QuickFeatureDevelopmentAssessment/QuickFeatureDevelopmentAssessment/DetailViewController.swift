@@ -9,6 +9,7 @@
 import UIKit
 
 final class DetailViewController: UIViewController {
+    
   var episode: Episode!
   
     @IBOutlet weak var fullImageViewCell: UIImageView!

@@ -11,11 +11,11 @@ import CoreData
 
 class ViewController: UIViewController {
     
-    private let fruitModel = FruitsModel()
-    private let carModel = CarsModel()
-    private let planetModel = PlanetsModel()
-    private let jungleModel = JungleModel()
-    private let fishModel = FishModel()
+     let fruitModel = FruitsModel()
+     let carModel = CarsModel()
+     let planetModel = PlanetsModel()
+     let jungleModel = JungleModel()
+     let fishModel = FishModel()
 
  
     @IBOutlet weak var imageGramTableView: UITableView!
@@ -57,12 +57,13 @@ class ViewController: UIViewController {
     extension ViewController: UITableViewDataSource {
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return fruitModel.hits.count
+            
+            return 5//categoryArray.count
 }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "reuseCell", for: indexPath) as! TableViewCell
-            let fruitCell = fruitModel.hits[indexPath.row]
+            let fruitCell = fruitModel.hits[indexPath.section]
             let cellImage = try! UIImage(data: NSData(contentsOf: NSURL(string: fruitCell.userImage)! as URL) as Data)
             cell.imageViewCell.image = cellImage
             return cell
@@ -71,7 +72,8 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let fruitCell = self.fruitModel.hits[indexPath.row]
+       
+        let fruitCell = self.fruitModel.hits[indexPath.section]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
 }

@@ -28,6 +28,14 @@ class CoreDataManager {
         let allImages = try? context.fetch(fetchRequest)
         return allImages ?? []
     }
+    func save<T: NSManagedObject>(object: T) {
+        context.insert(object)
+        try? context.save()
+    }
+    func delete<R: NSManagedObject>(object: R) {
+        context.insert(object)
+        try? context.delete(object)
+    }
 }
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046E4266232145CD008D3B16 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E4265232145CD008D3B16 /* CategoryViewModel.swift */; };
+		046E426823215524008D3B16 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E426723215524008D3B16 /* Favorites.swift */; };
 		04B355A42319542800653B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B355A32319542800653B03 /* AppDelegate.swift */; };
 		04B355A62319542800653B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B355A52319542800653B03 /* ViewController.swift */; };
 		04B355A92319542800653B03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B355A72319542800653B03 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046E4265232145CD008D3B16 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		046E426723215524008D3B16 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		04B355A02319542800653B03 /* ImageGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B355A32319542800653B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B355A52319542800653B03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				04B355D4231DC31200653B03 /* TableViewCell.swift */,
 				04B355D5231DC31200653B03 /* TableViewCell.xib */,
 				04B355DA231DE11700653B03 /* DetailViewController.swift */,
+				046E4265232145CD008D3B16 /* CategoryViewModel.swift */,
+				046E426723215524008D3B16 /* Favorites.swift */,
 			);
 			path = ImageGram;
 			sourceTree = "<group>";
@@ -240,7 +246,9 @@
 				04B355CB231C507700653B03 /* ImageGramCarsModel.swift in Sources */,
 				04B355D6231DC31200653B03 /* TableViewCell.swift in Sources */,
 				04B355CF231C5B8E00653B03 /* ImageGramJungleModel.swift in Sources */,
+				046E4266232145CD008D3B16 /* CategoryViewModel.swift in Sources */,
 				04B355D1231C5C1800653B03 /* ImageGramFishModel.swift in Sources */,
+				046E426823215524008D3B16 /* Favorites.swift in Sources */,
 				04B355C9231954E700653B03 /* ImageGramContainer.swift in Sources */,
 				04B355CD231C509200653B03 /* ImageGramPlanetsModel.swift in Sources */,
 			);

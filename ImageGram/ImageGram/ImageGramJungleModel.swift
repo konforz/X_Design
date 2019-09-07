@@ -34,7 +34,7 @@ final class JungleModel {
                 case hits
             }
             init(from decoder: Decoder) throws {
-                let JungleContainer = try decoder.container(keyedBy: JungleCodingKeys.self)
+                let JungleContainer = try decoder.container(keyedBy: CodingKeys.self)
             }
         }
         
@@ -48,7 +48,7 @@ struct Hits: Codable {
     let userImage: String
     let largeImage: String
     
-    enum jungleCodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case views
         case likes
         case comments
@@ -57,7 +57,7 @@ struct Hits: Codable {
         case largeImage = "largeImageURL"
     }
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: jungleCodingKeys.self)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         self.views = try container.decode(Int.self, forKey: .views)
         self.likes = try container.decode(Int.self, forKey: .likes)
         self.comments = try container.decode(Int.self, forKey: .comments)

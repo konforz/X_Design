@@ -42,15 +42,15 @@ class NextViewController: UIViewController {
     
     }
 
-private func setUpViewController(with got: Episodes) {
-    // set all the outlets
-//    season.text ?? nil = got.season as!
-//    name.text ?? nil = got.name as!
-//    premier.text ?? nil  = got.premier as!
-//    runtime.text ?? nil = got.runtime as!
-//    number.text ?? nil = got.number
-//    summary.text = got.summary
-
-}
+//private func setUpViewController(with got: Episodes) {
+//    // set all the outlets
+////    season.text ?? nil = got.season as!
+////    name.text ?? nil = got.name as!
+////    premier.text ?? nil  = got.premier as!
+////    runtime.text ?? nil = got.runtime as!
+////    number.text ?? nil = got.number
+////    summary.text = got.summary
+//
+//}
 }
 

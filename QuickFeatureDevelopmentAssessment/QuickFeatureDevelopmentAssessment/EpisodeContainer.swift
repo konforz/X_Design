@@ -35,14 +35,14 @@ struct EpisodeContainer: Codable {
     let subContainer = try topContainer.nestedContainer(keyedBy: EpisodeCodingKeys.self, forKey: .topLevel)
     self.episodes = try subContainer.decode([Episode].self, forKey: .episodes)
   }
-    init (episode: [Episode]) {
-         episode.self
-    }
-    func encode(to encoder: Encoder) throws {
-        var topContainer = try encoder.container(keyedBy: TopLevelCodingKeys.self)
-        var subContainer = try topContainer.nestedContainer(keyedBy:
-            EpisodeCodingKeys.self, forKey: Episode)
-    }
+//    init (episode: [Episode]) {
+//         episode.self
+//    }
+//    func encode(to encoder: Encoder) throws {
+//        var topContainer = try encoder.container(keyedBy: TopLevelCodingKeys.self)
+//        var subContainer = try topContainer.nestedContainer(keyedBy:
+//            EpisodeCodingKeys.self, forKey: Episode)
+//    }
 }
 
 
@@ -83,14 +83,14 @@ struct Episode: Codable {
         
 }
     
-    init() {
-        airDate = ""
-        airStamp = ""
-        name = ""
-        runtime = 1
-        summary = ""
-        image = ""
-        
-    }
+//    init() {
+//        airDate = ""
+//        airStamp = ""
+//        name = ""
+//        runtime = 1
+//        summary = ""
+//        image = ""
+//        
+//    }
 
 }

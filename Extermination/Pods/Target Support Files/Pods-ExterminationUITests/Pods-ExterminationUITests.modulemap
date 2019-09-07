@@ -1,0 +1,6 @@
+framework module Pods_ExterminationUITests {
+  umbrella header "Pods-ExterminationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

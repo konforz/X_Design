@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046E429923217754008D3B16 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E429823217754008D3B16 /* NextViewController.swift */; };
 		04B3562F2320360B00653B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3562E2320360B00653B03 /* AppDelegate.swift */; };
 		04B356312320360B00653B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B356302320360B00653B03 /* ViewController.swift */; };
 		04B356342320360B00653B03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B356322320360B00653B03 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		04B356392320360D00653B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B356382320360D00653B03 /* Assets.xcassets */; };
 		04B3563C2320360D00653B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B3563A2320360D00653B03 /* LaunchScreen.storyboard */; };
 		04B356472320360D00653B03 /* characterAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B356462320360D00653B03 /* characterAPITests.swift */; };
+		04B356522320364B00653B03 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B356512320364B00653B03 /* CharacterViewModel.swift */; };
+		04B356542320373800653B03 /* CharacterUrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B356532320373800653B03 /* CharacterUrlSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046E429823217754008D3B16 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		04B3562B2320360B00653B03 /* characterAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = characterAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B3562E2320360B00653B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B356302320360B00653B03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		04B356422320360D00653B03 /* characterAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = characterAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B356462320360D00653B03 /* characterAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterAPITests.swift; sourceTree = "<group>"; };
 		04B356482320360D00653B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B356512320364B00653B03 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		04B356532320373800653B03 /* CharacterUrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUrlSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				04B3563A2320360D00653B03 /* LaunchScreen.storyboard */,
 				04B3563D2320360D00653B03 /* Info.plist */,
 				04B356352320360B00653B03 /* characterAPI.xcdatamodeld */,
+				04B356512320364B00653B03 /* CharacterViewModel.swift */,
+				04B356532320373800653B03 /* CharacterUrlSession.swift */,
+				046E429823217754008D3B16 /* NextViewController.swift */,
 			);
 			path = characterAPI;
 			sourceTree = "<group>";
@@ -200,6 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B356542320373800653B03 /* CharacterUrlSession.swift in Sources */,
+				046E429923217754008D3B16 /* NextViewController.swift in Sources */,
+				04B356522320364B00653B03 /* CharacterViewModel.swift in Sources */,
 				04B356312320360B00653B03 /* ViewController.swift in Sources */,
 				04B3562F2320360B00653B03 /* AppDelegate.swift in Sources */,
 				04B356372320360B00653B03 /* characterAPI.xcdatamodeld in Sources */,

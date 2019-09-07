@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 let ResponseURL = "https://api.duckduckgo.com/?q=burn%20notice%20characters&format=json&pretty=1"
 var characterArray = [Character]()
 
@@ -21,9 +23,6 @@ return
         guard let data = data, Error == nil, let Container = try? JSONDecoder().decode (CharacterApiResponse.self, from: data) else {return}
         characterArray.self = Container.characterArray
     }
-    
-    init(from decoder: Decoder) throws {
-        let Container = try? decoder.container(keyedBy: CharacterAPIResponse.self)
-    }
+
 
 }

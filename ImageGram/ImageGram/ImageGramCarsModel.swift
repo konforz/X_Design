@@ -32,7 +32,7 @@ final class CarsModel {
                 case hits
             }
             init(from decoder: Decoder) throws {
-                let CarsContainer = try decoder.container(keyedBy: CarsCodingKeys.self)
+                let CarsContainer = try decoder.container(keyedBy: CodingKeys.self)
             }
         }
         
@@ -47,7 +47,7 @@ final class CarsModel {
         let userImage: String
         let largeImage: String
         
-        enum carsCodingKeys: String, CodingKey {
+        enum CodingKeys: String, CodingKey {
             case views
             case likes
             case comments
@@ -56,7 +56,7 @@ final class CarsModel {
             case largeImage = "largeImageURL"
         }
         init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: carsCodingKeys.self)
+            let container = try decoder.container(keyedBy: CodingKeys.self)
             self.views = try container.decode(Int.self, forKey: .views)
             self.likes = try container.decode(Int.self, forKey: .likes)
             self.comments = try container.decode(Int.self, forKey: .comments)
