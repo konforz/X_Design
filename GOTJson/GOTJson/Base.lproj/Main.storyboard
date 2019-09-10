@@ -114,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.89734455960000004" green="0.1280962709" blue="0.19041426340000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary-&gt;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACH-j3-6jC">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary-&gt;" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACH-j3-6jC">
                                 <rect key="frame" x="0.0" y="436" width="414" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="o4l-Pm-sZ9"/>

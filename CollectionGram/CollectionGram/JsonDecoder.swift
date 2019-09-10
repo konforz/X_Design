@@ -9,10 +9,17 @@
 import Foundation
 import UIKit
 
+class searchRequest {
 func findRepositories(matching query: String) {
-    let api = "https://pixabay.com"
-    let apiKey = "/api/?key=13466060-69767d8687e81218abbf53a42"
-    let endpoint = "/search/repositories?q=\(query)"
+    let api = "https://pixabay.com/api"
+    let apiKey = "/?key=13466060-69767d8687e81218abbf53a42"
+    let endpoint = "&q=\(query)&image_type=photo"
     let url = URL(string: api + apiKey + endpoint)
- //   &q=fruits&image_type=photo&pretty=true"
+    let query: [String] = ["fruits", "cars", "planets", "jungle", "fish"]
+  
+    
+let session = URLSession.shared
+    
+ 
+}
 }
