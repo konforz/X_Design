@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049734B1232A6E8000DA2E0A /* NewNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049734B0232A6E8000DA2E0A /* NewNotificationCenter.swift */; };
 		04985CDF2322992C00813F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04985CDE2322992C00813F42 /* AppDelegate.swift */; };
 		04985CE12322992C00813F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04985CE02322992C00813F42 /* ViewController.swift */; };
 		04985CE42322992C00813F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04985CE22322992C00813F42 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049734B0232A6E8000DA2E0A /* NewNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotificationCenter.swift; sourceTree = "<group>"; };
 		04985CDB2322992C00813F42 /* NotificationCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04985CDE2322992C00813F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04985CE02322992C00813F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				04985CEA2322992D00813F42 /* LaunchScreen.storyboard */,
 				04985CED2322992D00813F42 /* Info.plist */,
 				04985CE52322992C00813F42 /* NotificationCenter.xcdatamodeld */,
+				049734B0232A6E8000DA2E0A /* NewNotificationCenter.swift */,
 			);
 			path = NotificationCenter;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049734B1232A6E8000DA2E0A /* NewNotificationCenter.swift in Sources */,
 				04985CE12322992C00813F42 /* ViewController.swift in Sources */,
 				04985CE72322992C00813F42 /* NotificationCenter.xcdatamodeld in Sources */,
 				04985CDF2322992C00813F42 /* AppDelegate.swift in Sources */,

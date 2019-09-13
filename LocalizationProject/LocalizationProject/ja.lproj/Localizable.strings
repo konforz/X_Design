@@ -1,0 +1,10 @@
+/* 
+  Lcalizable.strings
+  LocalizationProject
+
+  Created by MCS on 9/11/19.
+  Copyright © 2019 MCS. All rights reserved.
+*/
+
+"helloWorldText" = "こんにちは";
+"helloPerson" = "こんにちは, %@";

@@ -11,6 +11,7 @@ import Foundation
 final class PlanetsModel {
     private let planetsURL = "https://pixabay.com/api/?key=13466060-69767d8687e81218abbf53a42&q=planets&image_type=photo&pretty=true"
      var hits = [Hits]()
+   
     
     func getData(_ completion: (() -> Void)?) {
         guard let planetsURL = URL(string: self.planetsURL) else {
@@ -27,16 +28,19 @@ final class PlanetsModel {
             self.hits = theContainer.hits
         }.resume()
         
-        struct PlanetsContainer: Codable {
-            let hits = [Hits]()
-            
-            enum PlanetsCodingKeys: String, CodingKey {
-                case hits
-            }
-            init(from decoder: Decoder) throws {
-                let PlanetsContainer = try decoder.container(keyedBy: CodingKeys.self)
-            }
-        }
+struct PlanetsContainer: Codable {
+
+    let hits = [Hits]()
+    
+    
+    enum PlanetsCodingKeys: String, CodingKey {
+        case hits
+    }
+    init(from decoder: Decoder) throws {
+        let PlanetsContainer = try decoder.container(keyedBy: PlanetsCodingKeys.self)
+        let container = try PlanetsContainer.nestedContainer(keyedBy: PlanetsCodingKeys.self, forKey: .hits)
+    }
+}
         
         
     }

@@ -23,7 +23,8 @@ class ViewController: UIViewController {
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard motion == .motionShake else { return }
-        guard let sharkURL = Bundle.main.url(forResource: "shark", withExtension: withExtension: <#T##String?#>)
+        guard let sharkURL = Bundle.main.url(forResource: "shark", withExtension: "mp4" else { return }
+        let player = 
     }
 
 }

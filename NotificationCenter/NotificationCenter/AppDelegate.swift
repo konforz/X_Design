@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            NotificationCenter.default.post(name: ViewController.customNotification, object: nil, userInfo:  ["username": "paul"])
+            NewNotificationCenter.shared.postEvent(named: "custom notification", userInfo:  ["username": "paul"])
         }
         return true
     }

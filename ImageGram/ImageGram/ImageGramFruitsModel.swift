@@ -14,6 +14,7 @@ final class FruitsModel {
     private let fruitsURL = "https://pixabay.com/api/?key=13466060-69767d8687e81218abbf53a42&q=fruits&image_type=photo&pretty=true"
      var hits = [Hits]()
     
+    
   public  func getData(_ completion: (() -> Void)?) {
         guard let fruitsUrl = URL(string: self.fruitsURL) else {
             completion?()
@@ -63,6 +64,7 @@ struct Hits: Codable {
         self.userImage = try container.decode(String.self, forKey: .userImage)
         self.largeImage = try container.decode(String.self, forKey: .largeImage)
     }
+    
 }
 
 }

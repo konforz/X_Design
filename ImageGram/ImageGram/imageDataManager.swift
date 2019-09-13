@@ -21,7 +21,7 @@ class CoreDataManager {
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
-    private init() { }
+    init() { imageAPI.self  }
     
     func getAllImages() -> [Images] {
         let fetchRequest: NSFetchRequest<Images> = Images.fetchRequest()

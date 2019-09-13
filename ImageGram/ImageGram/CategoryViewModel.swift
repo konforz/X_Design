@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
  let fruitModel = FruitsModel().hits
  let carModel = CarsModel().hits
  let planetModel = PlanetsModel().hits
@@ -19,6 +20,7 @@ import UIKit
  let planetData = PlanetsModel().getData
  let jungleData = JungleModel().getData
  let fishData = FishModel().getData
+
 
 
 public var categoryArray: [Any] = [fruitModel, carModel, planetModel, jungleModel, fishModel]
