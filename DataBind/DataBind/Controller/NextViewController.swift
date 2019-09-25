@@ -22,6 +22,7 @@ protocol updateText {
     
     @IBOutlet weak var textField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 TheLabel.shared.updateLabel(with: textField.text!)

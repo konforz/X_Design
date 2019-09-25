@@ -90,12 +90,12 @@ class ProblemSolver {
             
             let items = j.split(separator: " ")
             let str1 = String(j.first!!)
-            let str2 = String(j.last!!)
-            
+            let str2 = ""
+            let str4 = String(j.last!!)
             //Output
             print(str1)
             print(str2)
-          
+            print(str4)
             
         }
        
