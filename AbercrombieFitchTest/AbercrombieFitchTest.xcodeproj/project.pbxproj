@@ -16,7 +16,6 @@
 		041F844B23341CDC0037BCA3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F844A23341CDC0037BCA3 /* ViewModel.swift */; };
 		041F844F23355BE40037BCA3 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F844E23355BE40037BCA3 /* NextViewController.swift */; };
 		041F8451233564FE0037BCA3 /* UrlSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F8450233564FE0037BCA3 /* UrlSessionModel.swift */; };
-		041F84532336B7590037BCA3 /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F84522336B7590037BCA3 /* LabelModel.swift */; };
 		04467C432337D05B00136925 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04467C412337D05B00136925 /* TableViewCell.swift */; };
 		04467C442337D05B00136925 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04467C422337D05B00136925 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		041F844A23341CDC0037BCA3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		041F844E23355BE40037BCA3 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		041F8450233564FE0037BCA3 /* UrlSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionModel.swift; sourceTree = "<group>"; };
-		041F84522336B7590037BCA3 /* LabelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModel.swift; sourceTree = "<group>"; };
 		04467C412337D05B00136925 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		04467C422337D05B00136925 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +122,6 @@
 			children = (
 				041F844A23341CDC0037BCA3 /* ViewModel.swift */,
 				041F8450233564FE0037BCA3 /* UrlSessionModel.swift */,
-				041F84522336B7590037BCA3 /* LabelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 				041F844F23355BE40037BCA3 /* NextViewController.swift in Sources */,
 				041F844B23341CDC0037BCA3 /* ViewModel.swift in Sources */,
 				041F8451233564FE0037BCA3 /* UrlSessionModel.swift in Sources */,
-				041F84532336B7590037BCA3 /* LabelModel.swift in Sources */,
 				04467C432337D05B00136925 /* TableViewCell.swift in Sources */,
 				041BA26A2332E9720029028F /* AppDelegate.swift in Sources */,
 			);

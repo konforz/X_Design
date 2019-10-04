@@ -9,24 +9,36 @@
 import Foundation
 import UIKit
 
-class UrlSession {
+class UrlSessionModel {
     
-    var aFitchArray: [fitchArrays] = []
+    var aFitchArray = [FitchItem]()
+    
 
-    func getData(withData arrayFitch: String, completion: @escaping([arrayFitch])->()) {
+    func getData(_ completion: (() ->Void)?) {
        let Path = "https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.json"
         let Ask = URLRequest(url: URL(string: Path)!)
         
         URLSession.shared.dataTask(with: Ask) {(data, response,_ ) in
+            defer {completion?()}
     guard let data = data else {return}
-            
-//            guard let responseAPIUrl = try? JSONDecoder().decode(arrayFitch.self, from: data)  else {
-//        print("something went wrong")
-//        return
+            let FitchArray = try? JSONDecoder().decode([FitchItem].self, from: data)
+            guard let allCategories = FitchArray else {
+                print("something went wrong")
+                return
+            }
+            self.aFitchArray = allCategories
+            print(self.aFitchArray)
+  
            
         }.resume()
 }
-   
+    func numberOfItems() -> Int {
+        return aFitchArray.count
+    }
+    
+    func item(for index: Int) -> FitchItem {
+        return self.aFitchArray[index]
+    }
 
 }
 

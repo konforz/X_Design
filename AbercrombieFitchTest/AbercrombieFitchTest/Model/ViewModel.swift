@@ -8,10 +8,8 @@
 
 import Foundation
     
-struct fitchArrays: Codable {
-    let fitchData: arrayFitch
-}
-    struct arrayFitch: Codable {
+
+    struct FitchItem: Decodable {
         let title: String?
         let backgroundImage: String?
         let content: [Content]?
@@ -28,15 +26,15 @@ struct fitchArrays: Codable {
             case content
         }
     }
-    struct Content: Codable {
+    struct Content: Decodable {
         let target: String?
         let title: String?
-        let elementType: String?
+//        let elementType: String?
         
         enum CodingKeys: String, CodingKey {
             case target
             case title
-            case elementType
+//            case elementType
         }
     }
 

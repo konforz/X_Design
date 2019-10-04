@@ -8,22 +8,34 @@
 
 import UIKit
 
+
 class TableViewCell: UITableViewCell {
     
- var aFitchArray: [fitchArrays] = []
+    @IBOutlet weak var pictureView: UIImageView!
     
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var topDescription: UILabel!
+    
+    @IBOutlet weak var promoMessage: UILabel!
+    
+    @IBOutlet weak var bottomDescription: UILabel!
+    
+    @IBOutlet weak var contentTitle: UILabel!
+    
+    var aFitchArray: [FitchItem] = []
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let dataCells: arrayFitch? = nil
-        let cellImage = try? UIImage(data: NSData(contentsOf: NSURL(string: (dataCells?.backgroundImage ?? nil)! )! as URL) as Data)
-        imageView?.image = cellImage
-        // Initialization code
+    
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+        super.setSelected(true, animated: true)
+ 
         // Configure the view for the selected state
     }
     

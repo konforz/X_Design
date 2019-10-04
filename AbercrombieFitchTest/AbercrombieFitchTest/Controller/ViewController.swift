@@ -12,10 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UITableView!
     
-    
-    let model = ApiUpdates.self
- var aFitchArray: [fitchArrays] = []
- let apiData = UrlSession()
+ let aFitchArray: [FitchItem] = []
+ let apiData = UrlSessionModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,25 +21,44 @@ class ViewController: UIViewController {
         scrollView.dataSource = self
         scrollView.delegate = self
         scrollView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "reuseCell")
-        self.apiData.getData(withData: "Text") {
-            (dataArray) in
-        print(dataArray)
+
+        
+        self.apiData.getData {
+            DispatchQueue.main.async {
+                self.scrollView.reloadData()
+            }
         }
-        DispatchQueue.main.async {
-            self.scrollView.reloadData()
-        }
+        
+//        DispatchQueue.main.async {
+//            self.scrollView.reloadData()
+//        }
     }
     }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return aFitchArray.count
+        return self.apiData.numberOfItems()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseCell", for: indexPath)
-        let fitchCells = aFitchArray[indexPath.row]
+ 
+        let cell = scrollView.dequeueReusableCell(withIdentifier: "reuseCell", for: indexPath) as! TableViewCell
+        let item = self.apiData.item(for: indexPath.row)
+         
         
+        cell.title.text = item.title ?? ""
+        cell.topDescription.text = item.topDescription ?? ""
+        cell.promoMessage.text = item.promoMessage ?? ""
+        cell.bottomDescription.text = item.bottomDescription ?? ""
+        
+    
+        
+        
+        DispatchQueue.main.async {
+            let cellImage = try? UIImage(data: NSData(contentsOf: NSURL(string:item.backgroundImage ?? "")! as URL) as Data)
+            cell.pictureView.image = cellImage ?? nil
+            
+        }
         
         return cell
     }
@@ -51,13 +68,13 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UIScrollViewDelegate, UITableViewDelegate {
     
-    
-    func tableView(_ tableview: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as? NextViewController else { return }
-        
-                       navigationController?.pushViewController(nextViewController, animated: true)
-        self.scrollView.deselectRow(at: indexPath, animated: true)
-}
+//
+//    func tableView(_ tableview: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as? NextViewController else { return }
+//
+//                       navigationController?.pushViewController(nextViewController, animated: true)
+//        self.scrollView.deselectRow(at: indexPath, animated: true)
+//}
 }
 
